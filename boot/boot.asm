@@ -1,24 +1,26 @@
 [org 0x7c00]
+  mov bp, 0x9000
+  mov sp, bp
+  mov bx, REAL_MODE
+  call print
+  call switch_to_pm
+  jmp $
+    
 ;custom bootloader for TFOS
-mov bx, str1
-call print
-call print_nl
-mov bx, code
-call print
 
+%include "lib/16/print.asm"
+%include "lib/32-bit/gdt.asm"
+%include "lib/32-bit/print.asm"
+%include "lib/32-bit/hex.asm"
+[bits 32]
+BEGIN_PM:
+  mov ebx, PROT_MODE
+  call print_pm
+  jmp $
 
-mov dx, 0x12fe
-call hex
+REAL_MODE db "Entered 16 bit mode, ", 0
+PROT_MODE db "Entered 32 bit mode, [: ", 0
 
-
-jmp $
-%include "lib/print.asm"
-%include "lib/hex.asm"
-%include "lib/disk.asm"
-str1:
-  db 'TFOS', 0
-code:
-  db 'code:', 0
 
 times 510-($-$$) db 0
 dw 0xaa55
