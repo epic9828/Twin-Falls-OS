@@ -1,10 +1,13 @@
 # TFOS
 just another operating system
 
+|Offers a bootloader, monolithic kernel, and other coming soon
 
-
-
-
+Checklist:
+bootloader; in progress
+kernel; not started
+fs; not even close
+gui; not done yet
 
 
 
