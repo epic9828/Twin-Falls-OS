@@ -11,13 +11,15 @@ kernel; not started
 
 fs; not even close
 
-gui; not done yet
+gui; ...
+
+networking; ...
 
 
 
 
-
-
+# compile
+have gcc and nasm installed
 
 # qemu
 run in qemu, 
