@@ -12,16 +12,13 @@ mabye networking?
 #define false 0
 
 //infinite loop for computer, unless shutdown
-void init(){
+void entry(){
 
-  while(1){
-    //TODO: fill this with code
-  }
 }
 
 //runs all important stuff
 int main(){
-  
-  init();
+    char* vid_mem  = (char*) 0xb8000;
+    *vid_mem = 'X';
 
 }
