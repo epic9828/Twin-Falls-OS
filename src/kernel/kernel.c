@@ -1,21 +1,21 @@
 /*
-#include "drivers/fs.h"
-#include "drivers/sys.h"
-#include "drivers/screen.h"
-#include "drivers/keyboard.h"
 kernel for tfOS, it is a monolithic kernel
 will support a gui, and user acces to File sys 
 mabye networking?
 */
+#include "kernel/drivers/fs.h"
+#include "kernel/drivers/sys.h"
+#define decode(s,t,u,m,p,e,d) m##s##u##t
+#define begin decode(a,n,i,m,a,t,e)
 
-#define true 1
-#define false 0
-//blank entry point
 void entry(){
 
 }
 
-//runs all important stuff
-int main()
+
+
+//main, init, all the good stuff
+int kinit()
 {
+  print("X");
 }
