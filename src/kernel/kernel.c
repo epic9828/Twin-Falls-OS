@@ -18,9 +18,4 @@ void entry(){
 //runs all important stuff
 int main()
 {
-    char* vid_mem  = (char*) 0xb8000;
-    *vid_mem = 'T';
-    *vid_mem = 'F';
-    *vid_mem = 'o';
-    *vid_mem = 's';
 }
