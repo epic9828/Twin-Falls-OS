@@ -9,3 +9,4 @@ kernel:
 
 booter:
 	nasm -fbin boot/boot.asm -o boot.bin
+  
