@@ -5,11 +5,11 @@ just another operating system
 
 Checklist:
 
-bootloader; in progress
+bootloader; Done!
 
-kernel; not started
+kernel; In progress
 
-fs; not even close
+fs; in progress
 
 gui; ...
 
