@@ -5,8 +5,6 @@ mabye networking?
 */
 #include "kernel/drivers/fs.h"
 #include "kernel/drivers/sys.h"
-#define decode(s,t,u,m,p,e,d) m##s##u##t
-#define begin decode(a,n,i,m,a,t,e)
 
 void entry(){
 
@@ -17,5 +15,8 @@ void entry(){
 //main, init, all the good stuff
 int kinit()
 {
-  print("X");
+  while(1){
+    
+  }
+  return 0;
 }
