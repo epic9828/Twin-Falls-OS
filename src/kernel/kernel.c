@@ -19,6 +19,8 @@ int kinit()
 {
   while(1){
     print("system kernel");
+
+    
   }
   return 0;
 }

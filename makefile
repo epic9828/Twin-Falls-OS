@@ -1,12 +1,7 @@
-link:
-	ld -o kernel.bin -Ttext 0x1000 entry.o kernel.o --oformat binary
-	cat boot.bin kernel.bin > os-image.bin
-kernel:
-	gcc -ffreestanding -c src/kernel/kernel.c -o kernel.o
-	nasm src/kernel/entry.asm -f elf -o entry.o
+#makefile for TFOS
 
-  
-
-booter:
-	nasm -fbin boot/boot.asm -o boot.bin
-  
+kernel: 
+	gcc -ffreestanding -nostdlib src/kernel/karnel.c -o kernel.o
+	nasm -f bin src/kernel/entry.asm -o entry.o
+ld:
+	ld -o kernel.o -Ttext 0x1000 entry.o --oformat binary
