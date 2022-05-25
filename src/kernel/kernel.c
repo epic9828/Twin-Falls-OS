@@ -14,13 +14,13 @@ void entry(){
 
 
 
-//main, init, all the good stuff
+//init, all the good stuff
 int kinit()
 {
   while(1){
     print("system kernel");
 
-    
+
   }
   return 0;
 }
