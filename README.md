@@ -11,11 +11,9 @@ kernel; In progress
 
 fs; in progress
 
-gui; ...
-
-networking; ...
 
 
+mabye python compiler?
 
 
 # compile
