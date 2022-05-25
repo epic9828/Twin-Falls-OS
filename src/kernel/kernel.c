@@ -6,6 +6,8 @@ mabye networking?
 #include "kernel/drivers/fs.h"
 #include "kernel/drivers/sys.h"
 
+
+//blank entry point
 void entry(){
 
 }
@@ -16,7 +18,7 @@ void entry(){
 int kinit()
 {
   while(1){
-    
+    print("system kernel");
   }
   return 0;
 }

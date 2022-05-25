@@ -1,4 +1,4 @@
-#ifdef c
+
 
 //global variables
 struct pos{
@@ -12,12 +12,7 @@ struct pos{
 *
 */
 
-#endif
-#ifdef cpp
 
-
-
-#endif
 
 
 #define true 1
@@ -47,6 +42,5 @@ char cat(char s[], char s1[]){
 
 //exits, what did you think would happen?
 void exit(){
-  //TODO: make an exit
-  
+  return 1;
 }
