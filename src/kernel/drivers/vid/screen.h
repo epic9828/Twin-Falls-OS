@@ -6,10 +6,19 @@ struct colors{
   char* yellow = (*char ) 0x34;
   char* white = (*char) 0xf;
 };
-
+//write addres
 char* mem_vga[] = {0xb8000,0xb80001, 0xb8002,0xb8003,0xb8004,0xb8005, 0xb8006,0xb8007,0xb8008,0xb8009, 0xb80010,0xb80011,0xb8012,0xb8013, 0xb8014,0xb8015};
 char* vga_txt = (char*) 0xb0000; 
 const char* newline = (char*) 0x0a;
+
+//finds length of string 
+char len(char input[], int output){
+  for(int i = 0; input[i]!= "\0"; i++){
+    output++;
+  }
+  return output;
+}
+
 
 //reads string length and then prints output to vid mem
 char print(char s[]){
