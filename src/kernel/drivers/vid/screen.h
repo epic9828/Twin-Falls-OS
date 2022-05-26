@@ -21,7 +21,7 @@ char print(char s[]){
 
 //string contencater
 char cat(char s[], char s1[]){
-    for(int i =0; s[i] != "/0"; i++){
+    for(int i =0; s1[i] != "/0"; i++){
       s[i] = s1[i];
     }
     return s;
