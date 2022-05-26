@@ -8,7 +8,7 @@ entry.o: src/kernel/entry.asm
 
 kernel.bin: entry.o kernel.o
 	ld -o $@ -Ttext 0x1000 $^ --oformat binary
-kernel.dis: kernel.bin
+kernel.dis: kernel.bin2
 	ndisasm -b 32 $< > $@
 boot.bin: boot.asm
 	nasm -f bin $< -o $@

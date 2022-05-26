@@ -1,6 +1,6 @@
 [bits 32]
 VID_MEM equ 0xb8000
-W_ON_B equ 0x0f
+W_ON_B equ 0x1f
 
 print_pm:
   pusha
