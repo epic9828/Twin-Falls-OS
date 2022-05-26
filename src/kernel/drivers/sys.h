@@ -19,6 +19,5 @@ struct pos{
 
 //exits, what did you think would happen?
 void exit(){
-  
   return 1;   
 }

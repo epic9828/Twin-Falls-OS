@@ -31,8 +31,7 @@ BEGIN_PM:
     mov ebx, MSG_PROT_MODE
     call print_pm
     call KERNEL_OFFSET 
-    jmp $ 
-      
+    jmp $       
 
 BOOT_DRIVE db 0 
 MSG_REAL_MODE db "Started in 16-bit Real Mode", 0
