@@ -1,8 +1,5 @@
 #makefile for TFOS
 
-all: run
-
-
 kernel.o: src/kernel/kernel.c
 	gcc -ffreestanding -c $< -o $@
 
