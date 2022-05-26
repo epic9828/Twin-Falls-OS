@@ -3,25 +3,19 @@ kernel for tfOS, it is a monolithic kernel
 will support a gui, and user acces to File sys 
 mabye networking?
 */
-#include "kernel/drivers/fs/fs.h"
-#include "kernel/drivers/sys.h"
-#include "kernel/drivers/keyboard/keyboard.h"
-
+//#include "kernel/drivers/fs/fs.h"
+#include "src/kernel/drivers/sys.h"
+//#include "src/kernel/drivers/keyboard/keyboard.h"
+#include "src/kernel/drivers/vid/screen.h"
 //blank entry point
-void entry(){
+void kernel_entry(){
 
 }
 
-
-
-
-//init, all the good stuff
-int kinit()
+void main()
 {
-  while(1){
-    print("system kernel");
-    print("starting bash, initizing gui");
-
-  }
-  return 0;
+  char *str[] = "TFOS";
+  print(str);
+  print("LOADING BASH");
+  
 }
