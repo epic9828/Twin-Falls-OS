@@ -1,4 +1,4 @@
-# TFOS
+# Twin Falls OS
 just another operating system
 
 |Offers a bootloader, monolithic kernel, and other coming soon
