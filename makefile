@@ -1,7 +1,7 @@
 #makefile for TFOS
 
-kernel.o: src/kernel/kernel.c
-	gcc -ffreestanding -c $< -o $@
+kernel.o: 
+	gcc -ffreestanding -c src/kernel/kernel.c -o $@
 
 entry.o: src/kernel/entry.asm
 	nasm -f elf $< -o $@
@@ -10,7 +10,7 @@ kernel.bin: entry.o kernel.o
 	ld -o $@ -Ttext 0x1000 $^ --oformat binary
 kernel.dis: kernel.bin
 	ndisasm -b 32 $< > $@
-boot.bin: boot.asm
-	nasm -f bin $< -o $@
+boot: 
+	nasm -f bin boot/boot.asm -o boot.bin
 os.bin: boot.bin kernel.bin
 	cat $^ >  $@
